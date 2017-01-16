@@ -1,0 +1,17 @@
+
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+      
+    RewriteCond %{REQUEST_FILENAME} !\.(css|js|png|jpg)$
+    RewriteCond %{REQUEST_FILENAME} !-f  
+    RewriteCond %{REQUEST_FILENAME} !-d 
+    RewriteRule ^update/(.*)$ index.php?page=update&id=$1 [L,NC]  [OR]
+    RewriteRule ^delete/(.*)$ index.php?page=delete&id=$1 [L,NC]  [OR]
+    RewriteRule ^/(.*)$ index.php?page=update&id=$1 [L,NC]  [OR]
+    RewriteRule ^todolist(.*)$ index.php?page=todo&id=$1 [L,NC]  [OR]
+    #RewriteRule ^(.*)$ index.php?id=$1 [L] 
+    
+     
+    
+</IfModule>

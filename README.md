@@ -1,5 +1,5 @@
 # todolist
-TodoList was build using a simple bootstrap 
+TodoList was build using a simple bootstrap/ MVC
 
 ###Controller that need to extends Asbtractcontroller
 ```

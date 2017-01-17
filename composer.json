@@ -16,5 +16,12 @@
             "Lib\\": "Lib/",
             "Rmanara\\": "src/"
         }
+    },"scripts": {
+        "post-install-cmd": [
+            "Lib\\Installer::Init"
+        ],
+        "post-update-cmd": [
+            "Lib\\Installer::Init"
+        ]
     }
 }
